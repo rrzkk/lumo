@@ -1,17 +1,23 @@
+"use client";
 import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
 
 import lumologo from "../../../public/lumo-main.svg";
-
+import { useRouter } from "next/navigation";
+import menuButton from "./menuBtn";
 const Header = () => {
+  const router = useRouter();
   return (
-    <div className="m-2 md:m-5 min-w-screen flex justify-center md:justify-between">
-      <div className="">
+    <div className="absolute w-screen block p-2 md:p-5 flex justify-center md:justify-between">
+      <div className="self-center">
         <Link href="/">
           <Image className="dark:invert" src={lumologo} alt="logo" />
         </Link>
+      </div>
+      <div className="block md:hidden self-center absolute right-5">
+        <div>{menuButton()}</div>
       </div>
       <div className="hidden md:block md:flex md:space-x-4 md:items-center">
         <div className="flex space-x-2">
@@ -59,7 +65,10 @@ const Header = () => {
 
           <Link href={"/cateringmenu"}>Catering Menu</Link>
         </div>
-        <div className="flex space-x-2">
+        <div
+          onClick={() => router.push("/contactus")}
+          className="flex space-x-2 cursor-pointer bg-orange-200 text-teal-700 px-4 py-2 rounded-full dark:text-black"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -72,8 +81,7 @@ const Header = () => {
               clipRule="evenodd"
             />
           </svg>
-
-          <Link href={"/contactus"}>Contact us</Link>
+          <a>Contact us</a>
         </div>
       </div>
     </div>
