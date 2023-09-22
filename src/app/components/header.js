@@ -10,7 +10,10 @@ import menuButton from "./menuBtn";
 const Header = () => {
   const router = useRouter();
   return (
-    <div className="absolute w-screen block p-2 md:p-5 flex justify-center md:justify-between">
+    <div
+      className="absolute w-screen block p-2 md:p-5 flex justify-center md:justify-between"
+      id="headerlumo"
+    >
       <div className="self-center">
         <Link href="/">
           <Image className="dark:invert" src={lumologo} alt="logo" />

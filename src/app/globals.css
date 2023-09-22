@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+canvas {
+  height: 88vh;
+}
+#mainpage {
+  padding-top: 12vh;
+}
+#headerlumo {
+  max-height: 12vh;
+}
