@@ -8,6 +8,18 @@ export default function test() {
       id="mainpage"
     >
       <ThreeLumos />
+
+      <div className=" fixed bottom-10 left-10 flex items-end justify-start ">
+        <p>
+          <b className="text-xl" target="_blank" rel="noopener noreferrer">
+            The Best Cafe in Sydney
+          </b>
+          <br />
+          <b className=" text-sm">Light Your Day</b>
+          <br />
+          <a className="text-xs	">1 Denison Street, North Sydney, 2060, NSW</a>
+        </p>
+      </div>
     </main>
   );
 }
