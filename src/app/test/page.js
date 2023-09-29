@@ -17,7 +17,13 @@ export default function test() {
           <br />
           <b className=" text-sm">Light Your Day</b>
           <br />
+          <a className="text-xs font-bold	">Find Us:</a>
+          <br />
           <a className="text-xs	">1 Denison Street, North Sydney, 2060, NSW</a>
+          <br />
+          <a className="text-xs	">
+            100 Pacific Highway, North Sydney, 2060, NSW
+          </a>
         </p>
       </div>
     </main>

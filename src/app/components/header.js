@@ -51,7 +51,7 @@ const Header = () => {
 
           <Link href={"/menu"}>Menu</Link>
         </div>
-        <div className="flex space-x-2">
+        {/* <div className="flex space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -67,7 +67,7 @@ const Header = () => {
           </svg>
 
           <Link href={"/cateringmenu"}>Catering Menu</Link>
-        </div>
+        </div> */}
         <div
           onClick={() => router.push("/contactus")}
           className="flex space-x-2 cursor-pointer bg-orange-200 text-teal-700 px-4 py-2 rounded-full dark:text-black"

@@ -66,7 +66,7 @@ const CustomMouseControls = (props) => {
       const delta = e.deltaY < 0 ? 1 : -1;
 
       // Adjust the camera's zoom property and ensure it's within [10, 100] range
-      camera.zoom = Math.min(Math.max(camera.zoom - delta * 0.25, 10), 100);
+      camera.zoom = Math.min(Math.max(camera.zoom - delta * 0.25, 20), 50);
 
       // Important! After adjusting the zoom, you need to call the camera's updateProjectionMatrix method
       camera.updateProjectionMatrix();
