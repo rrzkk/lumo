@@ -48,72 +48,105 @@ const ThreeLumos = () => {
 
   const { autoRotate, text, shadow } = config;
 
+  const [zoom, setZoom] = useState(40); // default value
+  const [scenePosition, setScenePosition] = useState([0, 0, 0]); // default position for the entire scene
+
+  useEffect(() => {
+    // Calculate the zoom based on window width
+    const calculateZoom = () => {
+      const windowWidth = window.innerWidth;
+
+      const windowHeight = window.innerHeight;
+
+      if (windowHeight > windowWidth) {
+        setZoom(15);
+        setScenePosition([0, 10, 0]); // Adjust this to move the entire scene higher on the screen
+      } else {
+        setScenePosition([0, 0, 0]); // Default position for desktop
+      }
+    };
+
+    // Call it once initially
+    calculateZoom();
+
+    // Add an event listener to recalculate when the window is resized
+    window.addEventListener("resize", calculateZoom);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", calculateZoom);
+    };
+  }, []);
+
   return (
     <Canvas
       shadows
       orthographic
-      camera={{ position: [10, 20, 20], zoom: 30 }}
+      camera={{ position: [10, 20, 20], zoom: zoom }}
       gl={{ alpha: true, preserveDrawingBuffer: true }}
     >
       {/* <color attach="background" args={["#f2f2f5"]} /> */}
       {/** The text and the grid */}
-      <Text
-        config={config}
-        rotation={[-Math.PI / 2, 0, 0]}
-        position={[0, -1, 2.25]}
-      >
-        {text}
-      </Text>
-      <TextTwo
-        rotation={[-Math.PI / 2, 0, Math.PI / 2]}
-        position={[-12, -1, -1]}
-        customizeScale={1}
-      >
-        Berry St
-      </TextTwo>
-      <TextTwo
-        rotation={[-Math.PI / 2, 0, 0]}
-        position={[-8, -1, -8]}
-        customizeScale={1}
-      >
-        Walker St
-      </TextTwo>
-      <TextTwo
-        rotation={[-Math.PI / 2, 0, 0]}
-        position={[-10, -1, 5.25]}
-        customizeScale={0.5}
-      >
-        Dension St
-      </TextTwo>
-      <TextTwo
-        rotation={[-Math.PI / 2, 0, 0]}
-        position={[0, -1, 7.25]}
-        customizeScale={1}
-      >
-        Miller St
-      </TextTwo>
-      <TextTwo
-        rotation={[-Math.PI / 2, 0, 0]}
-        position={[3, -1, 13]}
-        customizeScale={1}
-      >
-        Pacific Highway
-      </TextTwo>
+      <group position={scenePosition}>
+        <Text
+          config={config}
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[0, -1, 2.25]}
+        >
+          {text}
+        </Text>
+        <TextTwo
+          rotation={[-Math.PI / 2, 0, Math.PI / 2]}
+          position={[-12, -1, -1]}
+          customizeScale={1}
+        >
+          Berry St
+        </TextTwo>
+        <TextTwo
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[-8, -1, -8]}
+          customizeScale={1}
+        >
+          Walker St
+        </TextTwo>
+        <TextTwo
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[-10, -1, 5.25]}
+          customizeScale={0.5}
+        >
+          Dension St
+        </TextTwo>
+        <TextTwo
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[0, -1, 7.25]}
+          customizeScale={1}
+        >
+          Miller St
+        </TextTwo>
+        <TextTwo
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[3, -1, 13]}
+          customizeScale={1}
+        >
+          Pacific Highway
+        </TextTwo>
 
-      <TextTwo
-        rotation={[-Math.PI / 2, 0, 0]}
-        position={[0, -1, -6]}
-        customizeScale={0.5}
-      >
-        Little Spring St
-      </TextTwo>
-      <TextTwo
-        rotation={[-Math.PI / 2, 0, Math.PI / 2]}
-        position={[12, -1, 1]}
-        customizeScale={0.5}
-      >
-        Spring St
-      </TextTwo>
+        <TextTwo
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[0, -1, -6]}
+          customizeScale={0.5}
+        >
+          Little Spring St
+        </TextTwo>
+        <TextTwo
+          rotation={[-Math.PI / 2, 0, Math.PI / 2]}
+          position={[12, -1, 1]}
+          customizeScale={0.5}
+        >
+          Spring St
+        </TextTwo>
+      </group>
+      {<Grid />}
       {/** Controls */}
       <CustomOrbitControls
         autoRotate={autoRotate}
@@ -217,7 +250,6 @@ function Text({
             <MeshTransmissionMaterial {...config} background={texture} />
           </Text3D>
         </Center>
-        {<Grid />}
       </group>
     </>
   );
@@ -236,7 +268,7 @@ function TextTwo({
     const isDarkMode =
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setColor(isDarkMode ? 0xffffff : 0x000000);
+    setColor(isDarkMode ? 0x808080 : 0x808080);
 
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -246,7 +278,7 @@ function TextTwo({
         e.matches ? "Dark Mode" : "Light Mode"
       );
 
-      setColor(e.matches ? 0xffffff : 0x000000);
+      setColor(e.matches ? 0x808080 : 0x808080);
     };
 
     mediaQuery.addEventListener("change", handleChange);
@@ -278,7 +310,6 @@ function TextTwo({
             {/* Black material without texture */}
           </Text3D>
         </Center>
-        {<Grid />}
       </group>
     </>
   );

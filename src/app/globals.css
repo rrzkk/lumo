@@ -8,14 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -27,11 +19,29 @@ body {
 }
 
 canvas {
-  height: 88vh;
+  height: 100%;
 }
 #mainpage {
+  height: 100vh;
+  z-index: 100;
   padding-top: 12vh;
 }
+
 #headerlumo {
   max-height: 12vh;
+  position: fixed;
+  z-index: 200;
+}
+@media (max-width: 767px) {
+  #mainpage {
+    padding-top: 10vh;
+    z-index: 100;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }

@@ -11,7 +11,7 @@ const Header = () => {
   const router = useRouter();
   return (
     <div
-      className="absolute w-screen block p-2 md:p-5 flex justify-center md:justify-between"
+      className="block w-screen  p-1 md:p-5 flex justify-center md:justify-between"
       id="headerlumo"
     >
       <div className="self-center">
