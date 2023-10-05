@@ -32,10 +32,32 @@ canvas {
   position: fixed;
   z-index: 200;
 }
+
+/* in your CSS file (e.g., threeLumo.css) */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate 7s linear infinite;
+}
+
+.loadingPage {
+  width: 20%;
+}
+
 @media (max-width: 767px) {
   #mainpage {
     padding-top: 10vh;
     z-index: 100;
+  }
+  .loadingPage {
+    width: 70%;
   }
 }
 @media (prefers-color-scheme: dark) {
