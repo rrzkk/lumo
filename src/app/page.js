@@ -13,7 +13,7 @@ export default function test() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            The Best Cafe in Sydney
+            Your Everyday Coffee Stop
           </b>
           <br />
           <b className="text-xs md:text-sm">Light Your Day</b>
