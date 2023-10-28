@@ -71,6 +71,30 @@ canvas {
 
   align-items: center;
 }
+.about-us {
+  margin: 20px;
+  height: 100vh; /* Adjusted to viewport height */
+  width: 100vw;
+  position: relative; /* Added */
+  overflow-y: scroll; /* Added */
+}
+
+.about-us-inner {
+  height: 200vh;
+  position: absolute; /* Added */
+  width: 100%; /* Added */
+  top: 0; /* Added */
+  left: 0; /* Added */
+}
+
+.about-us-section {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 10vh;
+}
+
 .foodMenu {
   display: flex;
   flex-direction: row;
