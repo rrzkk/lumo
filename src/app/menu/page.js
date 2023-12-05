@@ -23,7 +23,12 @@ export default function Menu() {
         <BackgroundThree />
       </div>
       <div className="menu-outer">
-        <div className="menu-main " style={{ zIndex: "500" }}>
+        <div
+          className={`menu-main ${
+            isChecked ? "menu-main-tall" : "menu-main-short"
+          }`}
+          style={{ zIndex: "500" }}
+        >
           {/** Normal Menu */}
           <div className="smallFoodToggle ">
             <div class="relative inline-block w-10 align-middle select-none transition duration-200 ease-in">

@@ -251,9 +251,13 @@ canvas {
     flex-direction: column;
     align-items: center;
   }
-  .menu-main {
-    min-height: fit-content;
-    height: 195vh;
+
+  .menu-main-tall {
+    height: 195vh !important;
+  }
+
+  .menu-main-short {
+    height: 125vh !important;
   }
   .about-us-inner {
     padding-bottom: 30vh;
