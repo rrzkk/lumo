@@ -256,7 +256,7 @@ canvas {
     height: 195vh;
   }
   .about-us-inner {
-    height: 250vh;
+    padding-bottom: 30vh;
   }
 }
 @media (prefers-color-scheme: dark) {
