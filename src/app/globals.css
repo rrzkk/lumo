@@ -95,7 +95,7 @@ canvas {
 }
 
 .about-us-inner {
-  min-height: 240vh;
+  min-height: 230vh;
   position: absolute; /* Added */
   width: 100%; /* Added */
   top: 0; /* Added */
@@ -253,7 +253,10 @@ canvas {
   }
   .menu-main {
     min-height: fit-content;
-    height: calc(100% + 20vh);
+    height: 195vh;
+  }
+  .about-us-inner {
+    height: 250vh;
   }
 }
 @media (prefers-color-scheme: dark) {
