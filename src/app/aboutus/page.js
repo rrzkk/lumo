@@ -18,50 +18,58 @@ export default function aboutus() {
       </div>
       <div className="about-us" style={{ zIndex: "500" }}>
         <div className="about-us-inner">
-          <div className="about-us-section">
-            <div className="basis-2/5 flex justify-center content-center ">
+          <div className="about-us-section flex  flex-col sm:flex-row">
+            <div className="basis-full sm:basis-2/5 flex justify-center content-center ">
               <img
-                class="h-auto max-w-lg rounded-3xl	"
+                className="about-image max-w-lg rounded-3xl	"
                 src="/LUMOS-1.jpg"
                 alt="image description"
               />
             </div>
-            <div className="basis-3/5 flex  justify-center content-center">
-              <p className="w-2/3 text-lg font-semibold">
-                The word "Lumos" comes from Harry Potter - a charm that
-                illuminated the tip of the caster’s wand, allowing the caster to
-                see in the dark. The idea of a bright light that led the way
-                appealed to us.
+            <div className="basis-full sm:basis-3/5 flex  justify-center content-center">
+              <p className="w-full sm:w-2/3 text-lg font-semibold">
+                The word &quot;Lumos&quot; comes from Harry Potter - a charm
+                that illuminated the tip of the caster’s wand, allowing the
+                caster to see in the dark. The idea of a bright light that led
+                the way appealed to us.
               </p>
             </div>
           </div>
-          <div className="about-us-section">
-            <div className="basis-3/5 flex justify-center content-center">
-              <p className="w-2/3 text-lg font-semibold">
+          <div className="about-us-section flex  flex-col sm:flex-row">
+            <div className="basis-full sm:basis-3/5 flex justify-center content-center hidden sm:block">
+              <p className="w-full sm:w-2/3  text-lg font-semibold">
                 Quality coffee & food can brighten your day, and a quality
                 espresso bar can brighten the world. Born from a mission to
                 pioneer what is possible in an industry moving at incredible
                 speed, Lumos is positioned to light the way.
               </p>
             </div>
-            <div className="basis-2/5 flex justify-center content-center">
+            <div className="basis-full sm:basis-2/5 flex justify-center content-center">
               <img
-                class="h-auto max-w-lg rounded-3xl	"
+                className="about-image max-w-lg rounded-3xl	"
                 src="/LUMOS-2.jpg"
                 alt="image description"
               />
             </div>
+            <div className="basis-full sm:basis-3/5 flex justify-center content-center block sm:hidden">
+              <p className="w-full sm:w-2/3  text-lg font-semibold">
+                Quality coffee & food can brighten your day, and a quality
+                espresso bar can brighten the world. Born from a mission to
+                pioneer what is possible in an industry moving at incredible
+                speed, Lumos is positioned to light the way.
+              </p>
+            </div>
           </div>
-          <div className="about-us-section">
-            <div className="basis-2/5 flex justify-center content-center">
+          <div className="about-us-section flex  flex-col sm:flex-row">
+            <div className="basis-full sm:basis-2/5 flex justify-center content-center">
               <img
-                class="h-auto max-w-lg rounded-3xl	"
+                className="about-image max-w-lg rounded-3xl	"
                 src="/LUMOS-3.jpg"
                 alt="image description"
               />
             </div>
-            <div className="basis-3/5 flex justify-center content-center">
-              <p className="w-2/3 text-lg font-semibold">
+            <div className="basis-full sm:basis-3/5 flex justify-center content-center">
+              <p className="w-full sm:w-2/3  text-lg font-semibold">
                 Leaving no part of our process in the shadows, our sustainable
                 approach shines a light on every person, product, and piece of
                 packaging involved from crop to cup. We embrace a responsibility

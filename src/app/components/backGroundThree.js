@@ -33,7 +33,7 @@ const BackGroundThree = () => {
       const windowHeight = window.innerHeight;
 
       if (windowHeight > windowWidth) {
-        setZoom(15);
+        setZoom(40);
         setScenePosition([0, 10, 0]); // Adjust this to move the entire scene higher on the screen
       } else {
         setScenePosition([0, 0, 0]); // Default position for desktop
@@ -63,7 +63,6 @@ const BackGroundThree = () => {
       {/** The text and the grid */}
 
       {<Grid />}
-
 
       {/** The environment is just a bunch of shapes emitting light. This is needed for the clear-coat */}
       <Environment resolution={32}>

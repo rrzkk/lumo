@@ -6,9 +6,103 @@ import Image from "next/image";
 
 import lumologo from "../../../public/lumo-main.svg";
 import { useRouter } from "next/navigation";
-import menuButton from "./menuBtn";
+import MenuButton from "./menuBtn";
+import { useState } from "react";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
+
 const Header = () => {
   const router = useRouter();
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+  const list = () => (
+    <Box
+      sx={{ width: 250 }}
+      role="presentation"
+      onClick={toggleDrawer}
+      onKeyDown={toggleDrawer}
+    >
+      <List>
+        <ListItem>
+          <ListItemButton onClick={() => router.push("/")}>
+            <ListItemIcon>
+              {" "}
+              <Image src={lumologo} alt="logo" />
+            </ListItemIcon>
+          </ListItemButton>
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem>
+          <ListItemButton onClick={() => router.push("/aboutus")}>
+            <ListItemIcon>
+              <svg
+                className="w-6 h-6 "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM13.5 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm-7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM10 16c-3.047 0-5.5-2.735-5.5-5a.5.5 0 0 1 1 0 11.7 11.7 0 0 0 4.5.583c2.548 0 4.221-.371 4.5-.65a.515.515 0 0 1 .026-.106.457.457 0 0 1 .481-.372.531.531 0 0 1 .493.545c0 2.265-2.453 5-5.5 5Z" />
+              </svg>
+            </ListItemIcon>
+            <ListItemText primary={"About Us"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton onClick={() => router.push("/menu")}>
+            <ListItemIcon>
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </ListItemIcon>
+            <ListItemText primary={"Menu"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton onClick={() => router.push("/contactus")}>
+            <ListItemIcon>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223zM8.25 10.875a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </ListItemIcon>
+            <ListItemText primary={"Contact"} />
+          </ListItemButton>
+        </ListItem>
+      </List>
+    </Box>
+  );
   return (
     <div
       className="block w-screen  p-1 md:p-5 flex justify-center md:justify-between"
@@ -20,7 +114,10 @@ const Header = () => {
         </Link>
       </div>
       <div className="block md:hidden self-center absolute right-5">
-        <div>{menuButton()}</div>
+        <MenuButton onClick={toggleDrawer} />
+        <Drawer anchor="right" open={isDrawerOpen} onClose={toggleDrawer}>
+          {list()}
+        </Drawer>
       </div>
       <div className="hidden md:block md:flex md:space-x-4 md:items-center">
         <div className="flex space-x-2">

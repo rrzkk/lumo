@@ -61,14 +61,27 @@ canvas {
   transform: translateX(2vw);
 }
 
+.menu-outer {
+  height: 100vh; /* Adjusted to viewport height */
+  width: 100vw;
+  position: relative; /* Added */
+  display: flex;
+  overflow-y: scroll; /* Added */
+}
 .menu-main {
   margin: 20px;
-  height: 70vh;
+  height: fit-content;
 
   width: 100vw;
   display: flex;
   flex-direction: column;
 
+  align-items: center;
+}
+.foodToggle {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .about-us {
@@ -80,18 +93,36 @@ canvas {
 }
 
 .about-us-inner {
-  height: 200vh;
+  min-height: 220vh;
+  position: absolute; /* Added */
+  width: 100%; /* Added */
+  top: 0; /* Added */
+  left: 0; /* Added */
+}
+.contact-us {
+  margin: 20px;
+  height: 100vh; /* Adjusted to viewport height */
+  width: 100vw;
+  position: relative; /* Added */
+  overflow-y: scroll; /* Added */
+}
+
+.contact-us-inner {
+  min-height: 80vh;
   position: absolute; /* Added */
   width: 100%; /* Added */
   top: 0; /* Added */
   left: 0; /* Added */
 }
 
+.contactInput {
+  width: 40vw !important;
+  margin-top: 5vh !important;
+}
+
 .about-us-section {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
-  display: flex;
-  flex-direction: row;
   padding: 10vh;
 }
 
@@ -102,11 +133,16 @@ canvas {
   width: 100%;
   padding-right: 5vw;
 }
+.normalMenu {
+  display: flex;
+  flex-direction: row;
+}
 .foodSection {
   display: flex;
   flex-direction: column;
   height: 70vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding-right: 10px;
   padding-left: 20px;
   border-left: 2px solid;
@@ -128,6 +164,11 @@ canvas {
   height: fit-content;
   margin-left: 20px;
   font-weight: bold;
+}
+.about-image {
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 /* in your CSS file (e.g., threeLumo.css) */
@@ -155,6 +196,49 @@ canvas {
   }
   .loadingPage {
     width: 70%;
+  }
+  .about-us-inner {
+    min-height: fit-content;
+  }
+  .about-us-section {
+    height: fit-content;
+    padding: 30px;
+    padding-bottom: 20vh;
+  }
+  .about-image {
+    max-width: 100%; /* Add this line */
+    object-fit: cover; /* Optional: for maintaining aspect ratio */
+    margin-bottom: 20px;
+  }
+  .toggle-label {
+    width: 12vw;
+    height: 6vw;
+    border-radius: 6vw;
+  }
+  .toggle-label:before {
+    content: "";
+
+    top: 0.75vw;
+    left: 0.75vw;
+    width: 4.5vw;
+    height: 4.5vw;
+
+    border-radius: 4.5vw;
+  }
+  .toggle-checkbox:checked + .toggle-label:before {
+    transform: translateX(6vw);
+  }
+  .foodMenu {
+    flex-direction: column;
+  }
+  .normalMenu {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5vh;
+  }
+  .contactInput {
+    width: 80vw !important;
+    margin-top: 5vh !important;
   }
 }
 @media (prefers-color-scheme: dark) {

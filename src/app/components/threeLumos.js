@@ -226,10 +226,7 @@ function Text({
   font = "/Inter_Medium_Regular.json",
   ...props
 }) {
-  const texture = useLoader(
-    RGBELoader,
-    "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr"
-  );
+  const texture = useLoader(RGBELoader, "/assets/aerodynamics_workshop.hdr");
   return (
     <>
       <group>
