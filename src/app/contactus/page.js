@@ -4,6 +4,7 @@ import React from "react"; // Import useState
 import BackgroundThree from "../components/backGroundThree";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { Button, TextField } from "@mui/material";
 import { useState } from "react";
 import { useTheme } from "@mui/material/styles"; // Import useTheme hook
@@ -46,11 +47,19 @@ export default function Contact() {
 
               <EmailIcon
                 onClick={(event) =>
-                  (window.location.href = "mailto: lumosonedenison@gmail.com")
+                  (window.location.href = "mailto:lumosonedenison@gmail.com")
                 }
                 style={{ margin: "10px" }}
                 fontSize="large"
               ></EmailIcon>
+              <InstagramIcon
+                onClick={(event) =>
+                  (window.location.href =
+                    "https://www.instagram.com/lumos1denison/")
+                }
+                style={{ margin: "10px" }}
+                fontSize="large"
+              ></InstagramIcon>
             </div>
           </div>
           <div className="basis-3/4 flex">
