@@ -25,6 +25,32 @@ export default function Menu() {
       <div className="menu-outer">
         <div className="menu-main " style={{ zIndex: "500" }}>
           {/** Normal Menu */}
+          <div className="smallFoodToggle ">
+            <div class="relative inline-block w-10 align-middle select-none transition duration-200 ease-in">
+              <input
+                type="checkbox"
+                name="toggle"
+                id="toggle"
+                class="toggle-checkbox hidden"
+                checked={isChecked} // Use the state value
+                onChange={handleToggleChange} // Update state on change
+              />
+              <label
+                for="toggle"
+                class="toggle-label block overflow-hidden h-6 rounded-full cursor-pointer"
+              ></label>
+            </div>
+
+            {isChecked ? (
+              <p style={{ fontWeight: "bolder", margin: "10px" }}>
+                To Catering Menu
+              </p>
+            ) : (
+              <p style={{ fontWeight: "bolder", margin: "10px" }}>
+                To Normal Menu
+              </p>
+            )}
+          </div>
           {isChecked && (
             <div className="foodMenu">
               <div className="normalMenu">
@@ -179,7 +205,7 @@ export default function Menu() {
               </div>
             </div>
           )}
-          <div className="foodToggle">
+          <div className="foodToggle ">
             <div class="relative inline-block w-10 align-middle select-none transition duration-200 ease-in">
               <input
                 type="checkbox"

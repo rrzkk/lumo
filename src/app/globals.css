@@ -70,8 +70,7 @@ canvas {
 }
 .menu-main {
   margin: 20px;
-  height: fit-content;
-
+  min-height: fit-content;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -84,6 +83,9 @@ canvas {
   flex-direction: column;
   align-items: center;
 }
+.smallFoodToggle {
+  display: none;
+}
 .about-us {
   margin: 20px;
   height: 100vh; /* Adjusted to viewport height */
@@ -93,7 +95,7 @@ canvas {
 }
 
 .about-us-inner {
-  min-height: 220vh;
+  min-height: 240vh;
   position: absolute; /* Added */
   width: 100%; /* Added */
   top: 0; /* Added */
@@ -239,6 +241,19 @@ canvas {
   .contactInput {
     width: 80vw !important;
     margin-top: 5vh !important;
+  }
+  .foodToggle {
+    display: none;
+  }
+  .smallFoodToggle {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-main {
+    min-height: fit-content;
+    height: calc(100% + 20vh);
   }
 }
 @media (prefers-color-scheme: dark) {
