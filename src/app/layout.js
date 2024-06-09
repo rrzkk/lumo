@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Lumos Cafe",
-  description: "Lumos, Coffee, brunch, Sydney",
+  description: "Lumos, Coffee, brunch, North Sydney, Sydney",
 };
 
 export default function RootLayout({ children }) {

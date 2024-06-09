@@ -27,6 +27,14 @@ export default function test() {
           <a className="text-xs md:text-xs	">
             100 Pacific Highway, North Sydney, 2060, NSW
           </a>
+          <br />
+          <a className="text-xs md:text-xs	">
+            Departure Plaza, Mascot, 2020, NSW
+          </a>
+          <br />
+          <a className="text-xs md:text-xs	">
+            Lumos international airport coming soon
+          </a>
         </p>
       </div>
     </main>
