@@ -4,34 +4,34 @@ export default function caterringMenu() {
       <p style={{ fontWeight: "bolder", fontSize: "35px" }}>Beverage Menu</p>
       <p style={{ fontWeight: "bolder" }}>Hot Beverages</p>
       <p>
-        Small Size Standard Hot Drink (Capp, Latte, Flat White, Hot Choc, Chai)
+        Small Size Standard Hot Drink(Capp, Latte, Flat White, Hot Choc, Chai)
       </p>
-      <p>Small Size Mocha/ Dirty Chai </p>
+      <p>Small Size Mocha/ Dirty Chai</p>
       <br />
       <p>
-        Large Size Standard Hot Drink (Capp, Latte, Flat White, Hot Choc, Chai)
+        Large Size Standard Hot Drink(Capp, Latte, Flat White, Hot Choc, Chai)
       </p>
       <p>
-        Large Size Dirty Chai/ Mocha Alternative Milk/ Coffee Syrup/ Honey Extra
-        Shot/ Decaf 
+        Large Size Dirty Chai/ Mocha Alternative Milk/ Coffee Syrup/ Honey Extra
+        Shot/ Decaf
       </p>
       <br />
       <p>
-        Batch Brew 2L Serve Freshly made Batch Brew with specialty single bean. 
+        Batch Brew 2L Serve Freshly made Batch Brew with specialty single bean.
       </p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Cold Beverages</p>
       <p>Iced Coffee/ Chocolate</p>
       <p>Iced Mocha</p>
-      <p>Alternative Milk/ Coffee Syrup/ Honey  Extra Shot/ Decaf</p>
+      <p>Alternative Milk/ Coffee Syrup/ Honey Extra Shot/ Decaf</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Water</p>
       <p>Sparkling Water</p>
       <p>Juice</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Canned & Bottled Drinks</p>
-      <p>Canned Soft Drink  (Coke/ Coke Zero)</p>
-      <p>Bottled Soft Drink 600ml (Pepsi/ Pepsi Max/ Peach Ice Tea)</p>
+      <p>Canned Soft Drink (Coke/ Coke Zero)</p>
+      <p>Bottled Soft Drink 600ml(Pepsi/ Pepsi Max/ Peach Ice Tea)</p>
       <p>V Drink/ Red Bull (Canned)</p>
       <br /> <br />
       <p style={{ fontWeight: "bolder", fontSize: "35px" }}>
@@ -90,22 +90,23 @@ export default function caterringMenu() {
       <p style={{ fontWeight: "bolder", fontSize: "35px" }}>
         Pastries & Sweets
       </p>
-      <p style={{ fontWeight: "bolder" }}>
-        Cocktail Pastries with a side of butter, Serves 12 $42
-      </p>
+      <p style={{ fontWeight: "bolder" }}>Cocktail Pastries Serves 12 $42</p>
       <p>
         - muffins high top (raspberry/ orange & poppy/ apple cinnamon/
         chocolate/ blueberry/ choc chip/ raspberry)
       </p>
       <p>- almond croissant</p>
-      <p>- raisin snail</p>
+      <p>- raisin snail(orderby 6)</p>
       <p>- plain croissant</p>
       <p>- chocolate croissant</p>
-      <p>- danish (apple/ pear/ apricot/ lychee & rose/ sour cherry)</p>
+      <p>- danish (mixed flavour)</p>
       <p>- sugared blueberry bagel</p>
       <p>- plain scone</p>
-      <p>- sugared blueberry bagel</p>
-      <p>- filled donut ball (custard, jam, Nutella, min 6 each flavour)</p>
+      <p>- lamington (order by 6)</p>
+      <p>
+        - filled donut ball (custard, jam, Nutella, mixed flavour or min 6 each
+        flavour)
+      </p>
       <p>- mixture (min 3 of each kind)</p>
       <p>Add-on $3.50 ea</p>
       <br />
@@ -118,7 +119,7 @@ export default function caterringMenu() {
       <p>- mango & coconut bread</p>
       <p>- chocolate coconut bread (GF)</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Brownie & Slice, Serves 4 $33</p>
+      <p style={{ fontWeight: "bolder" }}>Brownie & Slice, Serves 6 $33</p>
       <p>- fig & nut slice (GF, VG)</p>
       <p>- Nutella brownie</p>
       <p>- raspberry brownie (GF)</p>

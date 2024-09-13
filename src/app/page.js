@@ -29,11 +29,11 @@ export default function test() {
           </a>
           <br />
           <a className="text-xs md:text-xs	">
-            Departure Plaza, Mascot, 2020, NSW
+            Lumos IC International Airport, Sydney International Airport
           </a>
           <br />
           <a className="text-xs md:text-xs	">
-            Lumos international airport coming soon
+            Level 2 Food Plaza, Mascot, 2020, NSW
           </a>
         </p>
       </div>
