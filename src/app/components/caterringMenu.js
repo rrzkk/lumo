@@ -40,32 +40,30 @@ export default function caterringMenu() {
       <p style={{ fontWeight: "bolder" }}>
         Specialty Roti Flat Bread, Serves 6
       </p>
-      <p>- leg ham, tomato truss, tasty cheese (v) $75</p>
+      <p>- leg ham, tomato truss, tasty cheese (v)</p>
       <p>
         - marinated chicken with secret sauce, roasted almond flake, baby
-        spinach $85
+        spinach
       </p>
       <br />
       <p style={{ fontWeight: "bolder" }}>
         Deluxe Filled Bagels (Plain or Sesame Seed) Serves 6
       </p>
-      <p>- smoked salmon, cream cheese, cucumber & onion. $85</p>
-      <p>- poached chicken breast with celery mayo mix $75</p>
+      <p>- smoked salmon, cream cheese, cucumber & onion.</p>
+      <p>- poached chicken breast with celery mayo mix</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Vegetarian Wraps, Serves 6 (V) $72</p>
+      <p style={{ fontWeight: "bolder" }}>Vegetarian Wraps, Serves 6 (V)</p>
       <p>- spinach wrap: scrambled egg, spinach & feta (v)</p>
       <p>
         - breakfast burrito: scrambled egg, tomato, Mexican cheese, jalapeño
         tequila relish (v)
       </p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>
-        Signature Chicken Wrap, Serves 6 $75
-      </p>
+      <p style={{ fontWeight: "bolder" }}>Signature Chicken Wrap, Serves 6</p>
       <p>- crumbled chicken, Swiss cheese, house salad, aioli or peri peri</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>
-        Classic Sourdough Sandwich, Serves 6 $75
+        Classic Sourdough Sandwich, Serves 6
       </p>
       <p>- egg & mayo (v)</p>
       <p>- leg ham & tasty cheese</p>
@@ -73,7 +71,7 @@ export default function caterringMenu() {
       <p>- leg ham & tasty cheese & tomato</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>
-        Gourmet Sourdough Sandwich, Serves 6 $78
+        Gourmet Sourdough Sandwich, Serves 6
       </p>
       <p>- reuben pastrami, Swiss cheese & sauerkraut or cucumber</p>
       <p>- smoked salmon, cream cheese, cucumber</p>
@@ -85,12 +83,12 @@ export default function caterringMenu() {
       <p>- Soy Linseed</p>
       <p>- Turkish Bread</p>
       <p>- White Sandwich Toast</p>
-      <p>- Gluten Free White Toast + $1.5 ea</p>
+      <p>- Gluten Free White Toast + ea</p>
       <br /> <br />
       <p style={{ fontWeight: "bolder", fontSize: "35px" }}>
         Pastries & Sweets
       </p>
-      <p style={{ fontWeight: "bolder" }}>Cocktail Pastries Serves 12 $42</p>
+      <p style={{ fontWeight: "bolder" }}>Cocktail Pastries Serves 12</p>
       <p>
         - muffins high top (raspberry/ orange & poppy/ apple cinnamon/
         chocolate/ blueberry/ choc chip/ raspberry)
@@ -108,29 +106,29 @@ export default function caterringMenu() {
         flavour)
       </p>
       <p>- mixture (min 3 of each kind)</p>
-      <p>Add-on $3.50 ea</p>
+      <p>Add-on ea</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>
-        Cocktail sugared blueberry bagel with cream cheese, Serves 10. $40
+        Cocktail sugared blueberry bagel with cream cheese, Serves 10.
       </p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Banana Bread Bite, Serves 6. $18</p>
+      <p style={{ fontWeight: "bolder" }}>Banana Bread Bite, Serves 6.</p>
       <p>- banana bread</p>
       <p>- mango & coconut bread</p>
       <p>- chocolate coconut bread (GF)</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Brownie & Slice, Serves 6 $33</p>
+      <p style={{ fontWeight: "bolder" }}>Brownie & Slice, Serves 6</p>
       <p>- fig & nut slice (GF, VG)</p>
       <p>- Nutella brownie</p>
       <p>- raspberry brownie (GF)</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Cake, Serves 6 $39</p>
+      <p style={{ fontWeight: "bolder" }}>Cake, Serves 6</p>
       <p>- chocolate candid orange cake (GF, VG)</p>
       <p>- Persian orange cake (GF)</p>
       <p>- friand (GF)</p>
       <p>- carrot cake</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Butterboy Cookie $7.5 ea</p>
+      <p style={{ fontWeight: "bolder" }}>Butterboy Cookie ea</p>
       <p>
         Flavours: milk choc chip, cookie & cream, muesli, double choc chip,
         snickerdoodle cookie filled with biscoff, marble choc chip (GF), salted
@@ -141,72 +139,70 @@ export default function caterringMenu() {
       <p style={{ fontWeight: "bolder" }}>
         Yoghurt, Bircher Muesli, Chia Pudding or Fruit Cup
       </p>
-      <p>- snack size $6 pp</p>
-      <p>- regular size $7.5 pp</p>
+      <p>- snack size pp</p>
+      <p>- regular size pp</p>
       <br />
       <br />
       <p style={{ fontWeight: "bolder", fontSize: "35px" }}>
         Fruit & Salad Platter
       </p>
       <p style={{ fontWeight: "bolder" }}>Seasonal Fruit Platter</p>
-      <p>Serving Size: 5-8 $45</p>
-      <p>Serving Size: 10-15 $75</p>
-      <p>Serving Size: 20-30 $135</p>
+      <p>Serving Size: 5-8</p>
+      <p>Serving Size: 10-15</p>
+      <p>Serving Size: 20-30</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Chicken Caesar Salad</p>
       <p>
         Grilled chicken breast, bacon, parmesan, croutons & poached egg combined
         with Caesar dressing
       </p>
-      <p>Serving Size: 5-8 $75</p>
-      <p>Serving Size: 10-15 $110</p>
+      <p>Serving Size: 5-8</p>
+      <p>Serving Size: 10-15</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Chicken Halloumi Salad</p>
       <p>
         Chicken breast, halloumi cheese, salad mix, cucumber, hummus, crispy
         wonton skin, pomegranate with French dressing
       </p>
-      <p>Serving Size: 5-8 $75</p>
-      <p>Serving Size: 10-15 $110</p>
+      <p>Serving Size: 5-8</p>
+      <p>Serving Size: 10-15</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Greek Salad (V)</p>
       <p>
         Cos lettuce, tomato, sliced onion, olive, cucumber, fetta cheese with
         lemon Greek dressing
       </p>
-      <p>Serving Size: 5-8 $55</p>
-      <p>Serving Size: 10-15 $90</p>
+      <p>Serving Size: 5-8</p>
+      <p>Serving Size: 10-15</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Falafel Salad (VG)</p>
       <p>
         Hommus, green goodness dressing, spinach, cucumber, chilli flake,
         edamame, avocado
       </p>
-      <p>Serving Size: 5-8 $75</p>
-      <p>Serving Size: 10-15 $110</p>
+      <p>Serving Size: 5-8</p>
+      <p>Serving Size: 10-15</p>
       <br />
       <p style={{ fontWeight: "bolder" }}>Garden Salad (VG)</p>
       <p>Mix leaf, capsicum, cucumber, avocado, tomato with French Dressing</p>
-      <p>Serving Size: 5-8 $45</p>
-      <p>Serving Size: 10-15 $80</p>
+      <p>Serving Size: 5-8</p>
+      <p>Serving Size: 10-15</p>
       <br />
       <p style={{ fontWeight: "bolder", fontSize: "35px" }}>Canapés</p>
-      <p style={{ fontWeight: "bolder" }}>
-        Antipasto Platter, Serves 10-15 $100
-      </p>
+      <p style={{ fontWeight: "bolder" }}>Antipasto Platter, Serves 10-15</p>
       <p>
         Crackers, prosciutto, salami, ham off bone, bocconcini, semi-dried
         tomatoes, Mediterranean olives, quince paste, cheddar.
       </p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Grazing Platter, serves 10-15 $100</p>
+      <p style={{ fontWeight: "bolder" }}>Grazing Platter, serves 10-15</p>
       <p>
         Crackers, salami, ham off bone, cheddar cheese, seasonal fruits, veggie
         sticks with creamy beetroot dip and hummus dip.
       </p>
       <br />
       <p style={{ fontWeight: "bolder", fontSize: "35px" }}>Hot Food Platter</p>
-      <p style={{ fontWeight: "bolder" }}>Cocktail Savoury, Service 12 $42</p>
+      <p style={{ fontWeight: "bolder" }}>Cocktail Savoury, Service 12</p>
       <p>- meat pie</p>
       <p>- sausage roll</p>
       <p>- ham quiche</p>
@@ -214,36 +210,36 @@ export default function caterringMenu() {
       <p>- spinach quiche (V)</p>
       <p>- mixture (min 6 of each kind)</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Gourmet Sliders, Serves 10 $80</p>
+      <p style={{ fontWeight: "bolder" }}>Gourmet Sliders, Serves 10</p>
       <p>- leg ham & tasty cheese</p>
       <p>- grilled beef patty, burger cheese & mix salad</p>
       <p>- grilled chicken, mix salad, aioli or peri peri</p>
       <p>- smoked salmon, cucumber w cream cheese</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Crumbled Chicken, Serves 5 $60</p>
+      <p style={{ fontWeight: "bolder" }}>Crumbled Chicken, Serves 5</p>
       <p>Crumbled chicken with steakhouse chips</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Souvlaki, Serves 5 $80</p>
+      <p style={{ fontWeight: "bolder" }}>Souvlaki, Serves 5</p>
       <p>Pork Souvlaki, pitta bread, tzatziki with steakhouse chips</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Fish & Chips, Serves 5 $80</p>
+      <p style={{ fontWeight: "bolder" }}>Fish & Chips, Serves 5</p>
       <p>
         Crispy hoki, mixed salad, homemade mango salsa dip with steakhouse chips
       </p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Crispy Combo Box $120</p>
+      <p style={{ fontWeight: "bolder" }}>Crispy Combo Box</p>
       <p>
         Crumbed chicken, crispy hoki fish, onion ring, potato gem, steakhouse
         chips
       </p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Arancini Party Platter $80</p>
+      <p style={{ fontWeight: "bolder" }}>Arancini Party Platter</p>
       <p>
         A mixture of 20 goats cheese arancini with 20 jalapeño cheese arancini,
         served on rocket leaf & tomato relish dip.
       </p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Mini Gourmet Pizzas, Serves 12 $60</p>
+      <p style={{ fontWeight: "bolder" }}>Mini Gourmet Pizzas, Serves 12</p>
       <p>- Za’atar (VG): Thyme, oregano, sesame, sumac</p>
       <p>- Supreme:</p>
       <p>
@@ -262,7 +258,7 @@ export default function caterringMenu() {
       </p>
       <p>- Margherita (V): Mozzarella, halloumi, feta, tomato, basil, onions</p>
       <br />
-      <p style={{ fontWeight: "bolder" }}>Mini Gourmet Pide, Serves 12 $64</p>
+      <p style={{ fontWeight: "bolder" }}>Mini Gourmet Pide, Serves 12</p>
       <p>- Mince Pide:</p>
       <p>
         Beef and lamb mince, black pepper, cumin, paprika, coriander, cloves,
